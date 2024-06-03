@@ -22,6 +22,7 @@ module "firewall" {
   sku_name                    = var.firewall_sku_name
   sku_tier                    = var.firewall_sku_tier
   ip_configuration            = var.firewall_ip_configuration
+  dns_proxy_enabled           = var.firewall_dns_proxy_enabled
   dns_servers                 = var.firewall_dns_servers
   private_ip_ranges           = var.firewall_private_ip_ranges
   management_ip_configuration = var.firewall_management_ip_configuration
