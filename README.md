@@ -119,9 +119,9 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_firewall"></a> [firewall](#module\_firewall) | d2lqlh14iel5k2.cloudfront.net/module_primitive/firewall/azurerm | ~> 2.0 |
-| <a name="module_policy"></a> [policy](#module\_policy) | d2lqlh14iel5k2.cloudfront.net/module_primitive/firewall_policy/azurerm | ~> 1.0 |
-| <a name="module_rules"></a> [rules](#module\_rules) | d2lqlh14iel5k2.cloudfront.net/module_primitive/firewall_policy_rule_collection_group/azurerm | ~> 1.0 |
+| <a name="module_firewall"></a> [firewall](#module\_firewall) | terraform.registry.launch.nttdata.com/module_primitive/firewall/azurerm | ~> 2.0 |
+| <a name="module_policy"></a> [policy](#module\_policy) | terraform.registry.launch.nttdata.com/module_primitive/firewall_policy/azurerm | ~> 1.0 |
+| <a name="module_rules"></a> [rules](#module\_rules) | terraform.registry.launch.nttdata.com/module_primitive/firewall_policy_rule_collection_group/azurerm | ~> 1.0 |
 
 ## Resources
 

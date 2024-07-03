@@ -11,7 +11,7 @@
 // limitations under the License.
 
 module "firewall" {
-  source  = "d2lqlh14iel5k2.cloudfront.net/module_primitive/firewall/azurerm"
+  source  = "terraform.registry.launch.nttdata.com/module_primitive/firewall/azurerm"
   version = "~> 2.0"
 
   firewall_policy_id  = module.policy.id
@@ -33,7 +33,7 @@ module "firewall" {
 }
 
 module "policy" {
-  source  = "d2lqlh14iel5k2.cloudfront.net/module_primitive/firewall_policy/azurerm"
+  source  = "terraform.registry.launch.nttdata.com/module_primitive/firewall_policy/azurerm"
   version = "~> 1.0"
 
   resource_group_name = var.resource_group_name
@@ -52,7 +52,7 @@ module "policy" {
 }
 
 module "rules" {
-  source  = "d2lqlh14iel5k2.cloudfront.net/module_primitive/firewall_policy_rule_collection_group/azurerm"
+  source  = "terraform.registry.launch.nttdata.com/module_primitive/firewall_policy_rule_collection_group/azurerm"
   version = "~> 1.0"
 
   for_each = var.rule_collection_groups
