@@ -47,6 +47,7 @@ module "policy" {
   intrusion_detection               = var.policy_intrusion_detection
   private_ip_ranges                 = var.policy_private_ip_ranges
   auto_learn_private_ranges_enabled = var.policy_auto_learn_private_ranges_enabled
+  sku                               = var.policy_sku
 
   tags = local.tags
 }

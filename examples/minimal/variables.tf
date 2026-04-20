@@ -185,16 +185,15 @@ variable "subnets" {
   description = "Map of subnet name to CIDR prefix to be created. Azure Firewall requires a subnet named `AzureFirewallSubnet` of at least /26 to operate."
   type = map(object({
     prefix = string
-    delegation = optional(object({
-      name    = string
-      actions = list(string)
-    }), null)
+    delegation = optional(map(object({
+      service_name    = string
+      service_actions = list(string)
+    })), {})
     service_endpoints                             = optional(list(string), []),
     private_endpoint_network_policies_enabled     = optional(bool, false)
     private_link_service_network_policies_enabled = optional(bool, false)
     network_security_group_id                     = optional(string, null)
     route_table_id                                = optional(string, null)
-    extra_tags                                    = optional(map(string), {})
   }))
   default = {
     AzureFirewallSubnet = {
